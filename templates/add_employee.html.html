@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un Employé</title>
+</head>
+<body>
+    <h1>Ajouter un Employé</h1>
+    <form method="POST">
+        <label>Nom : <input type="text" name="nom" required></label><br>
+        <label>Prénom : <input type="text" name="prenom" required></label><br>
+        <label>Date de naissance : <input type="date" name="date_naissance"></label><br>
+        <label>Poste : <input type="text" name="poste"></label><br>
+        <label>Catégorie :
+            <select name="categorie">
+                <option value="Enseignant">Enseignant</option>
+                <option value="Administratif">Administratif</option>
+                <option value="Technique">Technique</option>
+            </select>
+        </label><br>
+        <button type="submit">Ajouter</button>
+    </form>
+</body>
+</html>

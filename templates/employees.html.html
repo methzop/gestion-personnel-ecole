@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des Employés</title>
+</head>
+<body>
+    <h1>Liste des Employés</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Catégorie</th>
+            <th>Voir Bulletin</th>
+        </tr>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee.id }}</td>
+            <td>{{ employee.nom }}</td>
+            <td>{{ employee.prenom }}</td>
+            <td>{{ employee.categorie }}</td>
+            <td><a href="/bulletin/{{ employee.id }}">Générer PDF</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
